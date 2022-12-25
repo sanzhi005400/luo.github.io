@@ -1,6 +1,7 @@
 package com.hspedu.Collection_.List_.Set_;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -24,5 +25,9 @@ public class Set_01 {
         setHash.add(null);
 
         //遍历只有iterator和增强for
+        Iterator iterator = setHash.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }
